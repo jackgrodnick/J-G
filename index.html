@@ -15,16 +15,16 @@
   <body>
 
     <section style="background: white;" class="pageiddiv">
-      <h1 class="pageid" id="pageid">ABOUT</h1>
+      <h1 class="pageid" id="pageid">About</h1>
     </section>
 
     <div class="container">
       <div class="backer0">
       <div class="homepage">
         <div class="homepagecontent">
-          <p>Hi! 👋 I'm Jack</p>
-          <h1>I Make<br>Brands Matter<br>In The Digital World</h1>
-          <p>Front End / Web Designer / WordPress</p>
+          <p class="hi">Hi! 👋 I'm Jack</p>
+          <h1 class="introofido">I Make<br>Brands Matter<br>In The Digital World</h1>
+          <p class="hi" id="home-p">Front End / Web Designer / WordPress</p>
         </div>
       </div>
       </div>
@@ -76,7 +76,20 @@
       function updatePercentage() {
         t1.progress();
         console.log(t1.progress());
+        if (t1.progress() == 1) {
+          document.getElementById("pageid").innerHTML = "Services";
+        } else if (t1.progress() != 1) {
+          document.getElementById("pageid").innerHTML = "About";
+        }
       }
+
+      /* document.getElementById("pageid").innerHTML = "New text!";
+
+      if (t1.progress() == 1) {
+        document.getElementById("pageid").innerHTML = "Services";
+      } else if (t1.progress() != 1) {
+        document.getElementById("pageid").innerHTML = "About";
+      } */
 
       var t2 = new TimelineMax({onUpdate:updatePercentage2});
       const controller2 = new ScrollMagic.Controller();
