@@ -1,0 +1,85 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.transitionarea0 {
+  width: 100%;
+  height: 100vh;
+  background-color: #181818;
+}
+.pageid {
+  font-size: 20vw;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: rgba(0,0,0,.08);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+}
+
+.pageiddiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+}
+
+/* homePage */
+
+.homepage {
+  height: 100vh;
+  background-color: #181818;
+  width: 100%;
+}
+
+.homepagecontent {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  cursor: crosshair;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+.homepagecontent {
+    top: 35%;
+}
+}
+
+/* aboutPage */
+
+.aboutpage {
+  height: 100vh;
+  background-color: white;
+}
+
+
+/* servicesPage */
+
+.servicespage {
+  height: 100vh;
+}
+
+/* workpage */
+
+.workpage {
+  height: 100vh;
+}
+
+/* contactpage */
+
+.contactpage {
+  height: 100vh;
+}

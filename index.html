@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js" charset="utf-8"></script>
+    <script src="./JS/index.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <section style="background: white;" class="pageiddiv">
+      <h1 class="pageid" id="pageid">ABOUT</h1>
+    </section>
+
+    <div class="container">
+      <div class="backer0">
+      <div class="homepage">
+        <div class="homepagecontent">
+          <p>Hi! 👋 I'm Jack</p>
+          <h1>I Make<br>Brands Matter<br>In The Digital World</h1>
+          <p>Front End / Web Designer / WordPress</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="transitionarea0">
+
+      </div>
+
+      <div class="aboutpage">
+        <div class="aboutpagecontent">
+          <h1>test</h1>
+        </div>
+
+      </div>
+
+      <div class="servicespage">
+
+      </div>
+
+      <div class="workpage">
+
+      </div>
+
+      <div class="contactpage">
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      var t1 = new TimelineMax({onUpdate:updatePercentage});
+      const controller = new ScrollMagic.Controller();
+
+      t1.from('.pageiddiv', .5, {opacity: 0});
+      t1.to('.pageiddiv', .5, {opacity: 1});
+      t1.to('.pageiddiv', .5, {opacity: 0});
+      /* t1.to('.transitionarea0', .5, {opacity: 0}); */
+
+      const scene = new ScrollMagic.Scene({
+        triggerElement: '.homepage',
+        triggerHook: 'onLeave',
+        duration: '120%'
+      })
+
+      /* .setPin('.pageiddiv')*/
+      .setTween(t1)
+        .addTo(controller);
+
+      function updatePercentage() {
+        t1.progress();
+        console.log(t1.progress());
+      }
+
+      var t2 = new TimelineMax({onUpdate:updatePercentage2});
+      const controller2 = new ScrollMagic.Controller();
+
+      t2.to('.transitionarea0', .5, {opacity: 0});
+
+      const scene2 = new ScrollMagic.Scene({
+        triggerElement: '.homepage',
+        triggerHook: 'onLeave',
+        duration: '40%'
+      })
+
+      /* .setPin('.pageiddiv')*/
+      .setTween(t2)
+        .addTo(controller2);
+
+      function updatePercentage2() {
+        t2.progress();
+        console.log(t2.progress());
+      }
+
+      var t3 = new TimelineMax({onUpdate:updatePercentage3});
+      const controller3 = new ScrollMagic.Controller();
+
+      t3.to('.backer0', .5, {opacity: 0});
+
+      const scene3 = new ScrollMagic.Scene({
+        triggerElement: '.homepage',
+        triggerHook: 'onLeave',
+        duration: '40%'
+      })
+
+      /* .setPin('.pageiddiv')*/
+      .setTween(t3)
+        .addTo(controller3);
+
+      function updatePercentage3() {
+        t3.progress();
+        console.log(t3.progress());
+      }
+    </script>
+
+  </body>
+</html>
