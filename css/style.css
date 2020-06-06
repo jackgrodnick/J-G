@@ -7,7 +7,8 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  position: relative;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -38,6 +39,29 @@ body {
     margin: 0;
 }
 
+@media screen and (max-width: 1365px) {
+#screen {
+    font-size: 275px !important;
+}
+}
+
+@media screen and (max-width: 800px) {
+#screen {
+    font-size: 200px !important;
+}
+}
+
+@media screen and (max-width: 600px) {
+#screen {
+    font-size: 125px !important;
+}
+svg.svs {
+  height: 17% !important;
+  width: 75% !important;
+}
+}
+
+
 
 svg.svs {
     width: 430px;
@@ -45,12 +69,6 @@ svg.svs {
     position: absolute;
     top: 0;
     right: 0;
-}
-
-@media screen and (max-width: 600px) {
-  svg.svs {
-      width: 330px !important;
-  }
 }
 
 
