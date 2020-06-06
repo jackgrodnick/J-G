@@ -6,6 +6,10 @@ body {
   background: #171717;
 }
 
+.allall div {
+  height: 120px;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -74,7 +78,7 @@ svg.svs {
 
 .overlay-2 {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background: #f8cf48;
@@ -82,7 +86,7 @@ svg.svs {
 
 .overlay {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background: #171717;
