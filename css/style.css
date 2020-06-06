@@ -38,6 +38,7 @@ body {
     margin: 0;
 }
 
+
 svg.svs {
     width: 430px;
     height: 45%;
@@ -45,6 +46,13 @@ svg.svs {
     top: 0;
     right: 0;
 }
+
+@media screen and (max-width: 600px) {
+  svg.svs {
+      width: 330px !important;
+  }
+}
+
 
 .overlay-2 {
   z-index: 1;
