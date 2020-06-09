@@ -115,6 +115,11 @@
     </div>
 
     <script type="text/javascript">
+
+      objectsw = {
+        'run': 0,
+      }
+
       const fadeOut = () => {
 
         TweenMax.to('.myBtn', 1, {
@@ -154,7 +159,11 @@
         });
 
         document.querySelector('.allall').setAttribute('class', '');
+        objectsw.run = 1;
       }
+
+      let cod = objectsw.run;
+
     </script>
 
 
@@ -178,9 +187,10 @@
       .setTween(t1)
         .addTo(controller);
 
+
       function updatePercentage() {
         t1.progress();
-        console.log(t1.progress());
+        /* console.log(t1.progress()); */
         if (t1.progress() < 0.16) {
           document.querySelector('.pageiddiv').style.opacity = "0";
           document.querySelector('.container').setAttribute('id', 'black');
@@ -200,7 +210,6 @@
           document.querySelector('.pageiddiv').style.opacity = "0";
         }
       }
-
     </script>
 
     <script type="text/javascript">
@@ -224,7 +233,7 @@
 
       function updatePercentage2() {
         t2.progress();
-        console.log(t2.progress());
+        /* console.log(t2.progress()); */
         if (t2.progress() < 0.16) {
           document.querySelector('.pageiddiv1').style.opacity = "0";
           document.querySelector('.container').setAttribute('id', 'white');
@@ -268,7 +277,7 @@
 
       function updatePercentage3() {
         t3.progress();
-        console.log(t3.progress());
+        /* console.log(t3.progress()); */
         if (t3.progress() < 0.16) {
           document.querySelector('.pageiddiv2').style.opacity = "0";
           document.querySelector('.container').setAttribute('id', 'blue');
@@ -311,7 +320,7 @@
 
       function updatePercentage4() {
         t4.progress();
-        console.log(t4.progress());
+        /* console.log(t4.progress()); */
         if (t4.progress() < 0.16) {
           document.querySelector('.pageiddiv3').style.opacity = "0";
           document.querySelector('.container').setAttribute('id', 'black');
