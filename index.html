@@ -26,7 +26,9 @@
 
 
            <div class="intro">
-             <button class="myBtn data" onclick="fadeOut()">Enter</button>
+             <div class="divd">
+               <button class="myBtn data" onclick="fadeOut()">Enter</button>
+             </div>
            </div>
          </div>
 
@@ -108,10 +110,10 @@
 
     <script type="text/javascript">
 
-      TweenMax.to('.myBtn', 0.6, {
+      TweenMax.to('.divd', 1, {
         opacity: 1,
       });
-      TweenMax.to('#screen', 0.6, {
+      TweenMax.to('#screen', 1, {
         opacity: 1,
       });
 
