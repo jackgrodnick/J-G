@@ -43,6 +43,10 @@ body {
     opacity: 0;
 }
 
+#screen h1 {
+  font-weight: 700;
+}
+
 /* image
 #screen {
     fill: #fff;
@@ -276,6 +280,80 @@ end image */
 
 /* homePage */
 
+.logo {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  cursor: crosshair !important;
+  position: absolute;
+  left: 0;
+   top: 50%;
+   margin: 0;
+   transform: translate(0, -50%);
+   font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 50px;
+  }
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+  margin: 0 30px 0 30px;
+  height: 100px;
+}
+
+.contactBtn {
+  top: 50%;
+  margin: 0;
+  transform: translate(0, -50%);
+  display: block;
+  padding: 14px 34px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  border: 2px solid #f8cf48;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  background: none;
+/*  z-index: 2; */
+  transition: 0.8s ease-out;
+  cursor: crosshair !important;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  right: 0;
+}
+
+.contactBtn:hover {
+  color: #171717;
+  cursor: crosshair;
+}
+
+.contactBtn:before {
+  content: "";
+  position: absolute;
+  background: #f8cf48;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  transition: top 0.8s ease-out;
+}
+
+.contactBtn:hover:before {
+  top: 0;
+}
+
+
+
 .homepage {
   height: 100vh;
   width: 100%;
@@ -387,6 +465,20 @@ end image */
 .servicespage {
   height: 100vh;
   width: 100%;
+}
+
+.servicecontent h1 {
+  margin: 0;
+    color: rgba(22,21,23,.2);
+    font-size: 6vw;
+    position: absolute;
+    left: 6.5%;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
 /* workpage */
