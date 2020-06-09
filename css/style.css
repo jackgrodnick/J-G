@@ -3,7 +3,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background: white;
+  background: #171717;
 }
 
 .allall div {
@@ -27,7 +27,7 @@ body {
 }
 
 #black {
-  background: #171717;
+  background: #171717 !important;
   transition: 0.6s ease;
 }
 #screen {
