@@ -7,11 +7,6 @@
     <title></title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js" charset="utf-8"></script>
   </head>
   <body class="body">
 
@@ -57,7 +52,7 @@
       <div class="homepage">
         <div class="nav">
           <h1 class="logo"><i>JG</i></h1>
-          <a href="<a href="mailto:jack.grodnick@gmail.com?subject=Hi"><button type="button" name="button" class="contactBtn">START A PROJECT</button></a>
+          <a href="mailto:jack.grodnick@gmail.com?subject=Hi"><button type="button" name="button" class="contactBtn">START A PROJECT</button></a>
         </div>
         <div class="homepagecontent">
           <p class="hi">Hi! 👋 I'm Jack</p><span class="nothing"></span>
@@ -116,7 +111,7 @@
 
 
 
-    <script type="text/javascript">
+  <!-- IDEA:   <script type="text/javascript">
       setTimeout(() => {
       var t1 = new TimelineMax({onUpdate:updatePercentage});
       const controller = new ScrollMagic.Controller();
@@ -141,6 +136,7 @@
         t1.progress();
         /* console.log(t1.progress()); */
         if (t1.progress() < 0.16) {
+          /* document.querySelector('.pageiddiv').classList.add('z-index0') */
           document.querySelector('.pageiddiv').style.opacity = "0";
           document.querySelector('.container').setAttribute('id', 'black');
 
@@ -149,6 +145,7 @@
 /*          document.getElementById("pageid").innerHTML = "Services";
           document.querySelector('.pageiddiv').setAttribute('id', 'blue'); */
         } else if (t1.progress() >= 0.16 && t1.progress() < 1) {
+          /* document.querySelector('.pageiddiv').classList.remove('z-index0') */
           document.querySelector('.pageiddiv').style.opacity = "1";
           document.querySelector('.container').setAttribute('id', 'white');
 /*          document.getElementById("pageid").innerHTML = "About";
@@ -156,7 +153,10 @@
 
 
         } else if (t1.progress() == 1) {
+          /*document.querySelector('.pageiddiv').classList.add('z-index0')*/
           document.querySelector('.pageiddiv').style.opacity = "0";
+        } else {
+          /* document.querySelector('.pageiddiv').classList.add('z-index0') */
         }
       }
     }, 5200);
@@ -362,6 +362,20 @@
             document.querySelector('.body').setAttribute('id', 'white');
           }, 17000);
 
-    </script>
+          /* let arrr = ['test1', 'test2', 'test3']
+
+          for (let i = 0; i < arrr.length; i++) {
+            let
+          } */
+
+    </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" charset="utf-8" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" charset="utf-8" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js" charset="utf-8" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" charset="utf-8" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js" charset="utf-8" defer></script>
+    <script src="./lib/pagefade.js" charset="utf-8" defer></script>
+    <script src="./lib/introductionfade.js" charset="utf-8" defer></script>
   </body>
 </html>
