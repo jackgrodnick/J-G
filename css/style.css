@@ -44,6 +44,8 @@ body {
     position: absolute;
     top: 40%;
     left: 50%;
+    width: 80%;
+    text-align: center;
     transform: translate(-50%, -50%);
     cursor: crosshair !important;
     margin: 0;
