@@ -529,7 +529,7 @@ end image */
 
 /* other */
 
-@media (max-width: 800px) and (orientation: landscape) {
+@media (max-width: 900px) and (orientation: landscape) {
   body {
     position: fixed;
 /*background-image: #212121 url(./images/kgh.png) no-repeat center;
