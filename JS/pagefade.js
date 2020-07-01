@@ -184,3 +184,17 @@ console.log(test); */
     }
   }
 }, 5200);
+
+let button = document.querySelector('.contactBtn');
+let w = window.innerWidth;
+let h = window.innerHeight;
+document.querySelector('.contactBtn').addEventListener('mouseover', function() {console.log('work')})
+document.querySelector('.body').addEventListener('mousemove', function(e) {
+  console.log("mouse location:", e.clientX, e.clientY);
+  if ((w - e.clientX <= 180) && (w - e.clientX >= 30) && (30 <= e.clientY) && (e.clientY <= 70)) {
+    console.log('done');
+    button.classList.add("hover");
+  } else {
+    button.classList.remove("hover");
+  }
+})
